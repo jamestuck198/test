@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The Big Green Shed</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("DSC01704.jpeg");
+  min-height: 90%;
+}
+.w3-display-container mySlides {
+  width: 500px; /* Adjust the width to your desired size */
+  height: 300px; /* Adjust the height to your desired size */
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+    <a href="#" class="w3-bar-item w3-button">HOME</a>
+    <a href="#menu" class="w3-bar-item w3-button">MENU</a>
+    <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="#myMap" class="w3-bar-item w3-button">CONTACT</a>
+  </div>
+</div>
+  
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-padding">
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white w3-hide-small" style="font-size:100px">the<br><b>big green shed</b></span>
+    <span class="w3-text-white w3-hide-large w3-hide-medium" style="font-size:60px"><b>the<br>big green shed</b></span>
+    <p><a href="#menu" class="w3-button w3-xxlarge w3-black">see the menu</a></p>
+  </div>
+</header>
+
+<!-- Menu Container -->
+
+
+<!-- About Container -->
+<div class="w3-container w3-padding-64 w3-khaki w3-grayscale w3-xlarge" id="about">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">About</h1>
+    <p><b>We are so happy to present THE BIG GREEN SHED a place for a quiet glass, a casual bite and big parties.<br><br> focus is on flavour and fun, and it’s a grand project! It will grow slowly starting with our café and events then onto the cultivation of our large field focusing on our own produce, and maybe some wine vines added onto the big list of things to do.</b></p>
+
+    <h1><b>Opening Hours</b></h1>
+    
+    <div class="w3-row">
+      <div class="w3-col s6">
+        <p><b>Mon & Tue CLOSED</b></p>
+        <p><b>Wednesday 9:00 - 16.00 (last food orders at 15:00)</b></p>
+        <p><b>Thursday 9:00 - 16: (last food orders at 15:00)</b></p>
+      </div>
+      <div class="w3-col s6">
+        <p><b>Friday 09:00 - 16:00 (last food orders at 15:00)</b></p>
+        <p><b>Saturday 09:00 - 17:00 (last food orders at 16:00)</b></p>
+        <p><b>Sunday 09:00 - 17:00 (last food orders at 16:00)</b></p>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<div class="w3-container w3-padding-64 w3-khaki w3-grayscale w3-xlarge" id="team">
+  <div class="w3-content">
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Meet the team!</h1>
+    <div class="w3-content w3-display-container">
+
+      <div class="w3-display-container mySlides">
+        <img src="Lisa.jpg" style="width:100%">
+        <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+          Lisa
+        </div>
+      </div>
+
+      <div class="w3-display-container mySlides">
+        <img src="Molly.jpg" style="width:100%">
+        <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+          Molly
+        </div>
+      </div>
+      
+      <div class="w3-display-container mySlides">
+        <img src="Jodie.jpg" style="width:100%">
+        <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+          Jodie
+        </div>
+      </div>
+      
+      <div class="w3-display-container mySlides">
+        <img src="Archie.jpg" style="width:100%">
+        <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+          Archie
+        </div>
+      </div>
+      
+      <div class="w3-display-container mySlides">
+        <img src="Lily.jpg" style="width:100%">
+        <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+          Lilly
+        </div>
+      </div>
+      
+      <div class="w3-display-container mySlides">
+        <img src="chris.jpg" style="width:100%">
+        <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+          Chris
+        </div>
+      </div>
+      
+      <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+      <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+      
+      </div>
+      
+      <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+      
+      function plusDivs(n) {
+        showDivs(slideIndex += n);
+      }
+      
+      function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+           x[i].style.display = "none";  
+        }
+        x[slideIndex-1].style.display = "block";  
+      }
+      </script>
+    
+  </div>
+</div>
+
+<!-- Image of location/map -->
+
+
+<!-- Contact -->
+<div class="w3-container w3-padding-64 w3-lime w3-grayscale-min w3-xlarge">
+    <div class="w3-content">
+      <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contact</h1>
+      <p><b>email us at info@thebiggreenshed.co.uk <info@thebiggreenshed.co.uk></b></p>
+      <p> <b>We cater for a wide range of events, Weddings, bar Mitzvahs … you name it – we can do it!</b></p>
+      <form action="" target="_blank">
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+        <p><button class="w3-button w3-light-grey w3-block" type="submit">SEND MESSAGE</button></p>
+      </form>
+    </div>
+  </div>
+
+<!-- Footer -->
+
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-amber", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-amber";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
